@@ -64,30 +64,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const formData = new FormData(form);
 
+      const showError = (msg) => {
+        let box = document.getElementById("form-error");
+        if (!box) {
+          box = document.createElement("p");
+          box.id = "form-error";
+          box.setAttribute("role", "alert");
+          box.style.cssText = "margin-top:1rem;color:#ff8a8a;font-size:0.95rem;line-height:1.5;";
+          form.appendChild(box);
+        }
+        box.innerHTML = msg + ' You can also email us directly at <a href="mailto:hello.naviro.studio@gmail.com" style="color:inherit;text-decoration:underline;">hello.naviro.studio@gmail.com</a>.';
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+      };
+
       try {
         const response = await fetch(form.action, {
-          method: form.method,
+          method: "POST",
           body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
+          headers: { "Accept": "application/json" }
         });
 
         if (response.ok) {
-          // It worked! Show the success message and hide the form
+          const old = document.getElementById("form-error");
+          if (old) old.remove();
           successMessage.style.display = "block";
-          form.style.display = "none"; 
+          form.style.display = "none";
+          if (window.posthog) posthog.capture("enquiry_submitted");
         } else {
-          // Something went wrong on Formspree's side
-          alert("Oops! There was a problem submitting your form.");
-          submitButton.textContent = originalText;
-          submitButton.disabled = false;
+          let detail = "";
+          try {
+            const data = await response.json();
+            if (data && data.errors && data.errors.length) {
+              detail = " (" + data.errors.map(err => err.message).join("; ") + ")";
+            } else if (data && data.error) {
+              detail = " (" + data.error + ")";
+            }
+          } catch (_) { /* response was not JSON */ }
+          showError("Sorry, your enquiry could not be sent" + detail + ".");
         }
       } catch (error) {
-        // Network error
-        alert("Oops! There was a network error.");
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
+        showError("Sorry, we could not reach the server. Please check your connection and try again.");
       }
     });
   }
