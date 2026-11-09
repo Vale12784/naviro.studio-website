@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Work | NAVIRO Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- POSTHOG ANALYTICS TRACKING SNIPPET -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_BC9etszD9H66mBvu25NMJfSrSZdSQNHuWkiecb3ebF8q', {api_host: 'https://eu.i.posthog.com', persistence: 'memory'})
+    </script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html" class="logo">NAVIRO<span>.</span></a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Start a project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- WORK SECTION -->
+    <section class="section" style="min-height: 80vh;">
+        <div class="section-head reveal active">
+            <p class="eyebrow">Selected Work</p>
+            <h1 class="section-title">Projects & Concepts</h1>
+            <p style="color: var(--muted); margin-top: 1rem; max-width: 60ch;">
+                A showcase of digital experiences, custom developments, and concept projects engineered by NAVIRO.
+            </p>
+        </div>
+
+        <div class="work-grid">
+            <!-- Project 1 -->
+            <article class="work-card reveal active">
+                <img src="images/lyne-mockup.jpg" alt="Lyne's Pastries Website Mockup" class="work-thumb">
+                <h3>Lyne's Pastries</h3>
+                <p>A custom digital experience for a local bakery — menu, gallery and enquiry form. (Client Project)</p>
+            </article>
+            
+            <!-- Project 2 (Placeholder for future) -->
+            <article class="work-card reveal active">
+                <div class="work-thumb" style="display: flex; align-items: center; justify-content: center; background: rgba(28, 28, 28, 0.4); backdrop-filter: blur(16px);">
+                    <p style="color: var(--muted); font-family: var(--font-display);">Next project coming soon</p>
+                </div>
+                <h3>Your Project Here</h3>
+                <p>We are currently accepting new clients. Let's build something exceptional.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>© <span id="year"></span> NAVIRO Studio. Built by hand with HTML, CSS &amp; JavaScript.</p>
+        <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem; font-size: 0.8rem;">
+            <a href="privacy.html" style="color: var(--muted); text-decoration: none;">Privacy Policy</a>
+            <a href="terms.html" style="color: var(--muted); text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

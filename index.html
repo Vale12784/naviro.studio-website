@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NAVIRO Studio is an independent digital design and development studio. Find a way. Build a new one.">
+    <title>NAVIRO Studio | Digital Design & Development</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- POSTHOG ANALYTICS TRACKING SNIPPET -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_BC9etszD9H66mBvu25NMJfSrSZdSQNHuWkiecb3ebF8q', {api_host: 'https://eu.i.posthog.com', persistence: 'memory'})
+    </script>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html" class="logo">NAVIRO<span>.</span></a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Start a project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 01 — HERO -->
+        <section class="hero reveal" id="home">
+            <div class="hero-inner">
+                <p class="eyebrow">Independent digital studio</p>
+                <h1 class="hero-title">
+                    Find a way.<br>
+                    Build a new one.<br>
+                    <em>We are NAVIRO.</em>
+                </h1>
+                <p class="hero-sub">
+                    A creative technology studio designing and developing distinctive digital experiences for ambitious businesses.
+                </p>
+                <div class="hero-actions">
+                    <a href="index.html#contact" class="btn btn-primary">Start a project</a>
+                    <a href="work.html" class="btn btn-ghost">See selected work</a>
+                </div>
+            </div>
+            <div class="hero-graphic" aria-hidden="true"></div>
+        </section>
+
+        <!-- 02 — SERVICES -->
+        <section class="section services" id="services">
+            <div class="section-head reveal">
+                <p class="eyebrow">01 — Services</p>
+                <h2 class="section-title">What we do</h2>
+            </div>
+            <ul class="service-grid">
+                <li class="service-card reveal reveal-delay-1">
+                    <h3>Website design</h3>
+                    <p>Clean, modern design shaped around your business goals — not a template.</p>
+                </li>
+                <li class="service-card reveal reveal-delay-2">
+                    <h3>Frontend development</h3>
+                    <p>Fast, responsive HTML, CSS and JavaScript that works on every screen.</p>
+                </li>
+                <li class="service-card reveal reveal-delay-3">
+                    <h3>Redesigns</h3>
+                    <p>Turn an outdated site into something customers trust and enjoy using.</p>
+                </li>
+                <li class="service-card reveal">
+                    <h3>Maintenance</h3>
+                    <p>Ongoing updates, fixes and improvements so your site stays current.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 03 — FEATURED WORK -->
+        <section class="section work" id="work">
+            <div class="section-head reveal">
+                <p class="eyebrow">02 — Selected work</p>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="work-grid">
+                <article class="work-card reveal">
+                    <img src="images/lyne-mockup.jpg" alt="Lyne's Pastries Website Mockup" class="work-thumb">
+                    <h3>Lyne's Pastries</h3>
+                    <p>A custom digital experience for a local bakery — menu, gallery and enquiry form. (In development)</p>
+                    <a href="work.html" class="work-link">View all projects →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- 04 — ABOUT -->
+        <section class="section about" id="about">
+            <div class="section-head reveal">
+                <p class="eyebrow">03 — About</p>
+                <h2 class="section-title">The studio</h2>
+            </div>
+            <div class="about-body reveal">
+                <p>
+                    NAVIRO is an independent digital design and development studio.
+                    We build digital experiences for businesses that want to stand out rather than blend in.
+                </p>
+                <p>
+                    Every project is built by hand with HTML, CSS and JavaScript —
+                    no bloated page builders, no unnecessary complexity.
+                </p>
+                <p>
+                    Our process is simple: understand the business, design with intent,
+                    build it cleanly, and make sure it works everywhere.
+                </p>
+            </div>
+        </section>
+
+        <!-- 05 — CONTACT -->
+        <section class="section contact" id="contact">
+            <div class="section-head reveal">
+                <p class="eyebrow">04 — Contact</p>
+                <h2 class="section-title">Start a project</h2>
+            </div>
+            
+            <div class="contact-grid reveal">
+                
+                <!-- SUCCESS MESSAGE (Hidden by default) -->
+                <div id="form-success" class="form-success-message">
+                    <strong>Enquiry sent successfully!</strong> We will get back to you within 24 hours.
+                </div>
+
+                <!-- FORMSPREE FORM -->
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/mjyezvzb" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Tell us about your project</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <!-- Hidden fields for Formspree -->
+    <input type="hidden" name="_subject" value="New Enquiry from NAVIRO Website!">
+    
+    <button type="submit" class="btn btn-primary">Send enquiry</button>
+</form>
+                <div class="contact-direct">
+                    <p class="eyebrow">Or reach out directly</p>
+                    <a href="mailto:hello.naviro.studio@gmail.com">hello.naviro.studio@gmail.com</a>
+                    <a href="https://wa.me/2743326885" target="_blank" rel="noopener">WhatsApp →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>© <span id="year"></span> NAVIRO Studio. Built by hand with HTML, CSS &amp; JavaScript.</p>
+        <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem; font-size: 0.8rem;">
+            <a href="privacy.html" style="color: var(--muted); text-decoration: none;">Privacy Policy</a>
+            <a href="terms.html" style="color: var(--muted); text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

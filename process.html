@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Process | NAVIRO Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- POSTHOG ANALYTICS TRACKING SNIPPET -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_BC9etszD9H66mBvu25NMJfSrSZdSQNHuWkiecb3ebF8q', {api_host: 'https://eu.i.posthog.com', persistence: 'memory'})
+    </script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html" class="logo">NAVIRO<span>.</span></a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Start a project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PROCESS SECTION -->
+    <section class="section" style="min-height: 80vh;">
+        <div class="section-head reveal active">
+            <p class="eyebrow">How we work</p>
+            <h1 class="section-title">Our Process</h1>
+            <p style="color: var(--muted); margin-top: 1rem; max-width: 60ch;">
+                From initial enquiry to final delivery, we follow a transparent, structured methodology to ensure your project is a success.
+            </p>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-card reveal active">
+                <p class="eyebrow" style="color: var(--muted);">01 — Design</p>
+                <h3>Distinctive experiences</h3>
+                <p>We start by understanding your business goals. We create wireframes and high-fidelity designs that look premium and guide the user seamlessly.</p>
+            </div>
+            
+            <div class="service-card reveal active">
+                <p class="eyebrow" style="color: var(--muted);">02 — Technology</p>
+                <h3>Purposeful solutions</h3>
+                <p>We choose the right tools for the job. No bloated frameworks or unnecessary plugins. Just clean, semantic code built for performance.</p>
+            </div>
+            
+            <div class="service-card reveal active">
+                <p class="eyebrow" style="color: var(--muted);">03 — Development</p>
+                <h3>Functional websites</h3>
+                <p>We bring the designs to life using HTML, CSS, and JavaScript. Everything is built responsively so it works flawlessly on desktop, tablet, and mobile.</p>
+            </div>
+            
+            <div class="service-card reveal active">
+                <p class="eyebrow" style="color: var(--muted);">04 — Growth</p>
+                <h3>A foundation to expand</h3>
+                <p>Your website is never truly "finished". We hand over a scalable foundation that you can update and expand as your business grows.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>© <span id="year"></span> NAVIRO Studio. Built by hand with HTML, CSS &amp; JavaScript.</p>
+        <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem; font-size: 0.8rem;">
+            <a href="privacy.html" style="color: var(--muted); text-decoration: none;">Privacy Policy</a>
+            <a href="terms.html" style="color: var(--muted); text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
