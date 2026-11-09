@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
           box.style.cssText = "margin-top:1rem;color:#ff8a8a;font-size:0.95rem;line-height:1.5;";
           form.appendChild(box);
         }
-        box.innerHTML = msg + ' You can also email us directly at <a href="mailto:hello.naviro.studio@gmail.com" style="color:inherit;text-decoration:underline;">hello.naviro.studio@gmail.com</a>.';
+        box.innerHTML = msg + ' You can also email us directly at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.naviro.studio@gmail.com&su=Website%20enquiry" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">hello.naviro.studio@gmail.com</a>.';
         submitButton.textContent = originalText;
         submitButton.disabled = false;
       };
